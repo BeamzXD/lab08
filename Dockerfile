@@ -7,7 +7,6 @@ WORKDIR print
 
 RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_install
 RUN cmake --build _build
-RUN cmake --build _build --target install
 
 ENV LOG_PATH /home/logs/log.txt
 
